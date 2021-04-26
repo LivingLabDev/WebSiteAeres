@@ -20,6 +20,27 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "10px",
     maxWidth: 345,
   },
+  Canvas: {
+    width: '100%',
+    height: '95%',
+    paddingBottom: '48px',
+    paddingRight: '20px',
+    marginTop: '80px',
+    marginLeft: '10px',
+    marginRight: '80px',
+    marginBottom:' 0.9em',
+    overflow:' hidden',
+    borderRadius: '8px',
+    willChange: 'transform',
+  },
+  iframe: {
+    width: "100%",
+    height: "100%",
+    top: 0,
+    left: 0,
+    padding: 0,
+    margin: 0,
+  },
   media: {
     height: 0,
     paddingTop: "56.25%", // 16:9
@@ -48,6 +69,23 @@ export default function ProjectCards() {
     return (
       <div>
         <Grid container spacing={1}>
+          <Grid item spacing={4}>
+            <div className={classes.Canvas}>
+              <button>fullscreen</button>
+              <iframe
+                className={classes.iframe}
+                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEcwQw_jfw&#x2F;view?embed"
+              ></iframe>
+            </div>
+          </Grid>
+          <Grid item spacing={4}>
+            <div className={classes.Canvas}>
+              <iframe
+                className={classes.iframe}
+                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEZCAG9lT0&#x2F;view?embed"
+              ></iframe>
+            </div>
+          </Grid>
           <Grid item spacing={4}>
             <Card className={classes.root}>
               <CardHeader
