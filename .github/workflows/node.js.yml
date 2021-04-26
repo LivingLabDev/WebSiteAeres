@@ -26,5 +26,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-    - run: npm start & npx wait-on http://localhost:3000
+    - run: npm install --production
+    - run: cd /src && pm2 start App.js
 
