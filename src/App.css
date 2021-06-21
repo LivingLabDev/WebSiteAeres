@@ -22,11 +22,18 @@
 } */
 
 .App-Title {
-  padding-top: 30px;
+  padding-top: 140px;
   font-size: 45px;
   margin-bottom: 15px;
- }
+  color: white;
+  height: 600px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.7483368347338936) 33%, rgba(0,212,255,1) 100%);
+}
  
+.App-intro {
+  padding-top: 50px;
+}
 
 .App-link {
   color: #61dafb;
@@ -38,5 +45,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width:'480px') {
+  .Title {
+    margin-left: 185px;
+  }
+  .Members {
+    margin-left: 185px;
   }
 }

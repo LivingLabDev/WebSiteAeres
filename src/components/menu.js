@@ -149,7 +149,7 @@ export default function PersistentDrawerLeft() {
         </div>
         <Divider />
         <List>
-          {["Home", "Projects", "Contact"].map((text, index) => (
+          {["Projects", "Members", "Workshop"].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>{chooseLogo(index)}</ListItemIcon>
               <ListItemText primary={text} />
